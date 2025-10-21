@@ -42,3 +42,37 @@ To complete this project, your team should:
 - State the achieved performance clearly
 
 &nbsp;
+
+## Requirements
+Python 3.12.1
+
+
+## Process you have in mind for the project : ATT
+For a project like ATT, it might look something like this:
+
+ [ ]  find a good LLM model to handle spam 
+
+ [ ]  train it to improve it with the data
+
+ [ ]  Try and compare with best in class model @ Hugging face
+
+## concrete goals
+
+* What tools do you have to use?
+Lightning IA and Colab to train the model ,and the fine tuning.
+
+* What processes do you need to put into place?
+- Select pretrained model
+- Fine tune our models
+- evaluate it
+
+* What questions do you need to answer?
+Spam or ham ? that is the question.
+
+* What problems do you need to solve?
+toileting the data 
+Fine tune
+
+* What specific files do you need hand in for the certification?
+Notebook and a result brief about the evaluation of the models.
+
