@@ -1,78 +1,123 @@
-# Bloc5 AT&T Spam Detector
+# Bloc5
+
+[TOC]
+
+# Contexte
+
+Ce projet est à réaliser pour valider partiellement la certification _Data Science - Fullstack : Certification RNCP35288 CDSD_ avec le bloc 4.  
+
+**Bloc 4 - Analyse prédictive de données non-structurées par l'intelligence artificielle**
+
+- Traiter des données non-structurées (image, texte, audio) par la création de fonction de traitements via l'utilisation de librairies de programmation comme TensorFlow ou Numpy pour les transformer en matrices afin de les rendre interprétables par un algorithme d'apprentissage automatique profond (Deep learning en anglais)
+- Élaborer des réseaux de neurones adaptés (classiques, convolutifs ou recursifs) en superposant des couches neuronales via des librairies de programmation comme TensorFlow pour analyser des données non-structurées afin de détecter des signaux sur ces dernières
+- Créer un algorithme robuste et précis en configurant un réseau de neurones pré-entrainé profond afin de répondre à des problématiques de prédiction sur des volumes de données massifs
+- Créer des données non-structurées en élaborant des réseaux de neurones adverses afin de construire de nouvelles bases d'entrainement pour des applications d'intelligence artificielle
+- Évaluer la performance d'un algorithme d'apprentissage automatique profond en évaluant des indicateurs sur des données d'entrainement et de validation afin d'industrialiser son utilisation
+
+# AT&T Spam Detector
 
 <img src="https://full-stack-assets.s3.eu-west-3.amazonaws.com/M08-deep-learning/AT%26T_logo_2016.svg" alt="AT&T LOGO" width="50%" />
 
-## Company's Description 📇
+## Présentation de l’entreprise 📇
 
-AT&T Inc. is an American multinational telecommunications holding company headquartered at Whitacre Tower in Downtown Dallas, Texas. It is the world's largest telecommunications company by revenue and the third largest provider of mobile telephone services in the U.S. As of 2022, AT&T was ranked 13th on the Fortune 500 rankings of the largest United States corporations, with revenues of $168.8 billion! 😮
+AT&T Inc. est une entreprise multinationale américaine de télécommunications, dont le siège est situé à la Whitacre Tower, dans le centre-ville de Dallas, au Texas.  
+C’est la plus grande entreprise de télécommunications au monde en termes de chiffre d’affaires et le troisième plus grand fournisseur de services de téléphonie mobile aux États-Unis.  
 
-## Project 🚧
+En 2022, AT&T était classée **13ᵉ** au classement Fortune 500 des plus grandes entreprises américaines, avec un chiffre d’affaires de **168,8 milliards de dollars** 😮
 
-One of the main pain point that AT&T users are facing is constant exposure to SPAM messages.
+---
 
-AT&T has been able to manually flag spam messages for a time, but they are looking for an automated way of detecting spams to protect their users.
+## Projet 🚧
 
-## Goals 🎯
+L’un des principaux points de douleur rencontrés par les utilisateurs d’AT&T est leur exposition constante aux **messages SPAM**.
 
-Your goal is to build a spam detector, that can automatically flag spams as they come based solely on the sms' content.
+AT&T a, pendant un temps, été capable de signaler manuellement les messages indésirables, mais l’entreprise recherche désormais une **solution automatisée** permettant de détecter les spams afin de mieux protéger ses utilisateurs.
 
-## Scope of this project 🖼️
+---
 
-To start off, AT&T would like you to use the folowing dataset:
+## Objectifs 🎯
 
-<ins>Dowload the Dataset</ins>
+Ton objectif est de construire un **détecteur de spam** capable de signaler automatiquement les messages indésirables au moment où ils arrivent, en se basant **uniquement sur le contenu des SMS**.
 
-## Helpers 🦮
+---
 
-To help you achieve this project, here are a few tips that should help you:
+## Périmètre du projet 🖼️
 
-### Start simple
+Pour commencer, AT&T souhaite que tu utilises le jeu de données suivant :
 
-A good deep learing model does not necessarily have to be super complicated!
+<ins>Télécharger le jeu de données</ins>
+
+---
+
+## Aides 🦮
+
+Pour t’aider à mener ce projet à bien, voici quelques conseils utiles :
+
+### Commencer simplement
+
+Un bon modèle de deep learning n’a pas nécessairement besoin d’être extrêmement complexe !
 
 ### Transfer learning
 
-You do not have access to a whole lot of data, perhaps channeling the power of a more sophisticated model trained on billions of observations might help!
+Tu n’as pas accès à une très grande quantité de données. Exploiter la puissance d’un modèle plus sophistiqué, entraîné sur des milliards d’observations, pourrait donc être une bonne approche.
 
-## Deliverable 📬
+---
 
-To complete this project, your team should:
+## Livrables 📬
 
-- Write a notebook that runs preprocessing and trains one or more deep learning models in order to predict the spam or ham nature of the sms
-- State the achieved performance clearly
+Pour valider ce projet, ton équipe devra :
+
+- Rédiger un notebook qui effectue le prétraitement des données et entraîne un ou plusieurs modèles de deep learning afin de prédire si un SMS est un spam ou non (ham)
+- Présenter clairement les performances obtenues
 
 &nbsp;
 
-## Requirements
-Python 3.12.1
+---
 
+## Prérequis
 
-## Process you have in mind for the project : ATT
-For a project like ATT, it might look something like this:
+- Python 3.12.1
 
- [ ]  find a good LLM model to handle spam 
+---
 
- [ ]  train it to improve it with the data
+## Processus envisagé pour le projet : AT&T
 
- [ ]  Try and compare with best in class model @ Hugging face
+Pour un projet comme AT&T, le déroulement pourrait être le suivant :
 
-## concrete goals
+- [x] Trouver un bon modèle LLM capable de gérer la détection de spam  
+- [x] L’entraîner et l’améliorer à l’aide des données disponibles  
+- [x] Tester et comparer les performances avec les meilleurs modèles disponibles sur Hugging Face  
 
-* What tools do you have to use?
-Lightning IA and Colab to train the model ,and the fine tuning.
+---
 
-* What processes do you need to put into place?
-- Select pretrained model
-- Fine tune our models
-- evaluate it
+## Objectifs concrets
 
-* What questions do you need to answer?
-Spam or ham ? that is the question.
+### Quels outils dois-tu utiliser ?
 
-* What problems do you need to solve?
-toileting the data 
-Fine tune
+- Lightning AI et Google Colab pour l’entraînement et le fine-tuning des modèles
 
-* What specific files do you need hand in for the certification?
-Notebook and a result brief about the evaluation of the models.
+### Quels processus dois-tu mettre en place ?
 
+- Sélection d’un modèle pré-entraîné  
+- Fine-tuning du ou des modèles  
+- Évaluation des performances  
+
+### À quelles questions dois-tu répondre ?
+
+- Spam ou ham ? Telle est la question.
+
+### Quels problèmes dois-tu résoudre ?
+
+- Nettoyage et préparation des données  
+- Fine-tuning du modèle  
+
+### Quels fichiers spécifiques dois-tu rendre pour la certification ?
+
+- Un notebook  
+- Un court rapport présentant les résultats de l’évaluation des modèles
+
+___
+
+## Rapport court
+
+Le rapport de ce projet dans un fichier séparé : [rapport.md](./rapport.md)
