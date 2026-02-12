@@ -1,4 +1,4 @@
-# Bloc5
+# Bloc4
 
 [TOC]
 
@@ -94,7 +94,7 @@ Pour un projet comme AT&T, le déroulement pourrait être le suivant :
 
 ### Quels outils dois-tu utiliser ?
 
-- Lightning AI et Google Colab pour l’entraînement et le fine-tuning des modèles
+- Lightning AI pour l’entraînement et le fine-tuning des modèles a été choisi pour des raisons économiques et de performance (GPU à la demande)
 
 ### Quels processus dois-tu mettre en place ?
 
@@ -109,7 +109,7 @@ Pour un projet comme AT&T, le déroulement pourrait être le suivant :
 ### Quels problèmes dois-tu résoudre ?
 
 - Nettoyage et préparation des données  
-- Fine-tuning du modèle  
+- Fine-tuning du modèle (l'enfer des typages entre scikit-learn, Pytorch, Python)
 
 ### Quels fichiers spécifiques dois-tu rendre pour la certification ?
 
@@ -117,6 +117,11 @@ Pour un projet comme AT&T, le déroulement pourrait être le suivant :
 - Un court rapport présentant les résultats de l’évaluation des modèles
 
 ___
+
+## Artefacts
+
+L'énoncé du projet est donné dans le notebook : [01-AT&T_spam_detector.ipynb](./01-AT&T_spam_detector.ipynb).  
+Pour le rendu, il faut se reporter au notebook : [01-AT&T_spam_detector_FPr.ipynb](./01-AT&T_spam_detector_FPr.ipynb).  
 
 ## Rapport court
 
